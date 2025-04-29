@@ -775,7 +775,7 @@ img,video {
 
 .bg-gray-900 {
     --tw-bg-opacity: 1;
-    background-color: #111827;
+    background-color: #044be2;
     background-color: rgb(17 24 39/var(--tw-bg-opacity))
 }
 
@@ -984,10 +984,10 @@ img,video {
 
 .shadow-lg {
            
-            border: 8px groove rgb(255, 0, 0);
+            border: 8px groove rgb(255, 165, 0);
             border-radius: 9px;
 
-    --tw-shadow: 5px 5px 35px -5px rgba(255, 2, 2, 0.671), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --tw-shadow: 5px 5px 35px -5px rgba(255, 165, 0); 0 4px 6px -4px rgba(0, 0, 0, 0.1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
     box-shadow: 0 0 transparent,0 0 transparent,0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
     box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
@@ -1059,7 +1059,7 @@ body {
     margin: 0;
     padding: 0;
     transition: all .4s;
-    background: #0e0d0d;
+    background: #5f0101;
     color: #fff;
 }
 
@@ -1382,7 +1382,7 @@ scrollbar-color: #141d26 #eef8fc ;
   position: relative;
   padding: 8px 16px; /* Ajusta el padding para hacer el botón más pequeño */
   border-radius: 7px;
-  border: 1px solid rgb(238, 0, 0);
+  border: 1px solid rgb(255, 165, 0);
   font-size: 12px; /* Ajusta el tamaño de fuente para hacer el botón más pequeño */
   text-transform: uppercase;
   font-weight: 600;
@@ -1395,8 +1395,8 @@ scrollbar-color: #141d26 #eef8fc ;
 }
 
 button:hover {
-  background: rgb(255, 61, 61);
-  box-shadow: 0 0 30px 5px rgba(236, 0, 0, 0.815);
+  background: rgb(255, 165, 0);
+  box-shadow: 0 0 30px 5px rgba(255, 165, 0);
   transition: all 0.2s ease-out;
 }
 
@@ -1543,7 +1543,7 @@ button:active {
 <main class="container mx-auto px-4  max-w-7xl mb-auto">
 <div class="my-3">
   <div style="display: flex; align-items: center;">
-    <a href="https://deportesonplus.com/">
+    <a href="#">
       <img class="a" src="https://i.ibb.co/XCphYBP/deppng.png" alt="Logo" data-hs-theme-appearance="dark" style="width: 300px; margin-right: 40px" />
     </a>
     
@@ -1551,9 +1551,14 @@ button:active {
   </div>
   
   <center>
-    <h1 class="text-3xl m-3" style="color: rgb(255, 219, 12); font-family: fantasy;">EVENTO EN VIVO</h1>
+    <div>
+        <font size="3.5">
+        <p style="font-family: cursive;">EVENTOS EN VIVO</p>
+
+    </div>
 
   </center>
+  <br>
 
 <div class="grid md:grid-cols-5 gap-3">
  <div class="md:col-span-3 player w-full mx-auto">
@@ -1564,47 +1569,8 @@ allowfullscreen src="https://la12hd.com/vivo/canal.php?stream=espn" scrolling="n
 <a class="boton" href="#opcion-3" id="document" onclick="document.getElementById('streamframe').src = '//la12hd.com/vivo/canal.php?stream=espn'" style="text-align: left;"><button>OPC 1</button></a><span style="text-align: left;">&nbsp;</span>
 
 
-<div></div>
-<br>
 
-</div>
-  <td style="vertical-align:top;">
-    <div class="chat" style="text-align: center;">
-      <button id="openChatBtn">Abrir Chat</button>
-      <button id="closeChatBtn" style="display: none;">Cerrar Chat</button>
-      <iframe class="twitch" id="twitch-chat-embed" src="https://www.chatbro.com/es/08x3M/" width="360" height="500" loading="lazy" style="display: none;">Cargando...</iframe>
-      <div class="col-12 col-xl-4 pad-0"></div>
-      <div class="col-12 col-xl-4 chat-1 chat-container">
-    </div>
-    <script>
 
-  function cambiarFuente(nuevaFuente) {
-    document.getElementById('streamframe').src = nuevaFuente;
-  }
-      document.addEventListener('DOMContentLoaded', function () {
-        var openChatBtn = document.getElementById('openChatBtn');
-        var closeChatBtn = document.getElementById('closeChatBtn');
-        var twitchChatEmbed = document.getElementById('twitch-chat-embed');
-    
-        openChatBtn.addEventListener('click', function () {
-          openChatBtn.style.display = 'none';
-          closeChatBtn.style.display = 'inline';
-          twitchChatEmbed.style.display = 'block';
-        });
-    
-        closeChatBtn.addEventListener('click', function () {
-          openChatBtn.style.display = 'inline';
-          closeChatBtn.style.display = 'none';
-          twitchChatEmbed.style.display = 'none';
-        });
-      });
-    </script>
-        
-      </div>      
-    </div>
-  </td>
-
-<br>
 </html>
 
 
